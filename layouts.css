@@ -1,0 +1,181 @@
+body{
+	background-color: rgba(21, 21, 21, 1.0);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+p{
+	text-align: center;
+	font-family: arial, sans-serif;
+	font-size: clamp(26px, 2.3vw, 51px);
+}
+
+.section1, .sectiona1, .section2, .section3, .section4{
+	width: 68%;
+	height: 530px;
+	display: grid;
+	grid-gap: 1vw;
+	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+	overflow: auto;
+	resize: both;
+	padding: 2vw 2vw 2vw 2vw;
+	border-bottom: 3px dashed white;
+}
+.section1 div{
+	background-color: gold;
+	border-radius: 10px;
+	transition: all 0.2s;
+	backdrop-filter: blur(10px);
+}
+.section1 div:hover{
+	transform: scale(1.02);
+	box-shadow: 0 0 6px rgba(255, 215, 0, 0.9);
+}
+.section1{
+
+	transition: all 0.2s;
+}
+.s1child1{
+	grid-row: span 1;
+}
+.s1child2{
+	grid-column: span 1;
+}
+.s1child3{
+	grid-row: span 1;
+}
+.s1child4{
+	grid-row: span 2;
+}
+.s1child5{
+	grid-column: span 1;
+}
+
+
+.sectiona1{
+	margin-top: 20px;
+}
+.sectiona1 div{
+	background-color: #873333;
+	border-radius: 10px;
+	color: white;
+	transition: all 0.2s;
+}
+.sectiona1 div:hover{
+	transform: scale(1.02);
+	box-shadow: 3px 3px 3px #873333;
+
+}
+
+
+
+.section2{
+	margin-top: 20px;
+}
+
+.section2 div{
+	background-color: #996666;
+	border-radius: 10px;
+	transition: all 0.2s;
+}
+.section2 div:hover{
+	transform: scale(1.02);
+	box-shadow: 3px 3px 6px tomato;
+}
+.s2child3{
+	grid-row: span 2;
+}
+.s2child4{
+	grid-row: span 2;
+}
+
+
+.section3{
+	margin-top: 20px;
+}
+.section3 div{
+	background-color: #af9494;
+	border-radius: 10px;
+	transition: all 0.2s;
+}
+.section3 div:hover{
+	transform: scale(1.02);
+	box-shadow: 3px 3px 6px  pink;
+}
+
+.section4{
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+.section4 div{
+	background-color: teal;
+	border-radius: 10px;
+	transition: all 0.2s;
+}
+.section4 div:hover{
+	transform: scale(1.02);
+	box-shadow: 1px 1px 6px  teal;
+}
+.s4child1{
+	grid-column: span 2;
+	grid-row: span 2;
+}
+.s4child2{
+	grid-row: span 2;
+}
+.s4child3{
+	grid-row: span 2;
+}
+.s4child4{
+	grid-row: span 2;
+}
+.s4child5{
+	grid-row: span 2;
+}
+.s4child6{
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+
+@media (max-width: 1060px){
+	.section1, .sectiona1, .section2, .section3, .section4{
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		width: 100%;
+		resize: none;
+		overflow: hidden;
+		right: auto;
+	}
+	.section1 div, .sectiona1 div{
+		color: transparent;
+	}
+}
+@media (max-width: 740px){
+	.section1, .sectiona1, .section2, .section3, .section4{
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+}
+@media (max-width: 538px){
+	.section1, .sectiona1, .section2, .section3, .section4{
+		height: 330px;
+		grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+		grid-gap: 2vw;
+		padding-top: 0;
+		overflow: auto;
+	}
+	.section1 div, .sectiona1 div, .section2 div, .section3 div, .section4 div{
+		font-size: 0.6rem;
+
+	}
+	p{
+	}
+}
+@media (max-width: 380px){
+	.section1, .sectiona1, .section2, .section3, .section4{
+		height: 330px;
+		grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+		border-bottom: none;
+		margin-top: 0;
+	}
+}

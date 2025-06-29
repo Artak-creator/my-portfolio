@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div class="a10"></div>
+	<div class="a11"></div>
+	<div class="a12"></div>
+	<div class="a13"></div>
+	<div class="a14"></div>
+	<div class="a15"></div>
+	<div class="a16"></div>
+	<div class="a17"></div>
+	<div class="a18"></div>
+	<div class="a19"></div>
+	<div class="a20"></div>
+
+	<nav class="nav">
+		<div class="cube">	
+			<div class="button-cont">
+					<button id="btnfst">My Info</button>
+					<button id="btnsnd">Layouts</button>
+					<button id="btnthrd">Animations</button>
+					<button id="btnfth">Cards</button>
+			</div>
+			<div id="faceone" class="nav-1st-face">
+				<h1 class="face1-h1">Hello</h1>
+				<p class="face1-text"><span id="a1">I'm Artak</span> from Armenia. I have skills of CSS tools such as <span>Flexbox, keyframes, transition, css grid, clip-path</span> and other modern and powerfull tools which can make website modern, interactive, responsive and proportional. You can see and check my skills in pages where you can go by using navigation on upper part of screen.</p>
+			</div>
+			<div id="facetwo" class="nav-2nd-face">		
+				<a href="layouts.html" class="face2-link">Layout skills</a>
+				<p class="face2-text">For making responsive websites i use tools like <span id="a1">flexbox, CSS Grid and media quories.</span>if you click the link below you can see how responsiveness actually works.</p>
+				<a href="layouts.html">
+					<button class="face2-button">Click here</button>
+				</a>
+			</div>
+			<div id="facethree" class="nav-3rd-face">
+				<a href="buttons.html" class="face3-link">Animations</a>
+				<p class="face3-text">Here you can see icons and buttons with animations. For having that effect i used <span id="a1">keyframes and transitions.</span> Click the button bellow for view them.</p>
+				<a href="buttons.html">
+					<button class="face3-button">Animations</button>
+				</a>
+			</div>
+			<div id="facefour" class="nav-4th-face">
+				<a href="buttons.html" class="face4-link">Animations</a>
+				<p class="face4-text">Here you can see the road of making product cards</p>
+				<a href="shapes.html">
+					<button class="face4-button">Cards</button>
+			</div>
+		</div>
+	</nav>
+
+	<nav class="m-nav">
+		<a href="#for-a1">
+			<button id="m-btnfst">My Info</button>
+		</a>
+		<a href="#for-a2">
+			<button id="m-btnsnd">Layouts</button>
+		</a>
+		<a href="#for-a3">
+			<button id="m-btnthrd">Animations</button>
+		</a>
+		<a href="#for-a4">
+			<button id="m-btnfth">Hello4</button>
+		</a>
+	</nav>
+	<div class="m-section-1" id="for-a1">
+		<p class="m-face1-p">My info</p>
+		<p class="m-face1-text">
+			I'm Artak from Armenia. I have skills of CSS tools such as Flexbox, keyframes, transition, css grid, clip-path and other modern and powerfull tools which can make website modern, interactive, responsive and proportional. You can see and check my skills in pages where you can go by using navigation on upper part of screen.
+		</p>
+	</div>
+	<div class="m-section-2" id="for-a2">
+		<a href="layouts.html" class="m-face2-link">Layout skills</a>
+		<p class="m-face2-text">For making responsive websites i use tools like <span id="m-a1">flexbox, CSS Grid and media quories.</span>if you click the link below you can see how responsiveness actually works.</p>
+		<a href="layouts.html">
+			<button class="m-face2-button">Layouts</button>
+		</a>		
+	</div>
+	<div class="m-section-3" id="for-a3">
+		<a href="buttons.html" class="m-face3-link">Animations</a>
+		<p class="m-face3-text">Here you can see icons and buttons with animations. For having that effect i used keyframes and transitions. Click the button bellow for view them.</p>
+		<a href="buttons.html">
+		<button class="m-face3-button">Animations</button>
+		</a>
+	</div>
+	<div class="m-section-4" id="for-a4">
+		<a href="buttons.html" class="m-face4-link">Animations</a>
+		<p class="m-face4-text">Here you can see icons and buttons with animations. For having that effect i used <span id="a1">keyframes and transitions.</span> Click the button bellow for view them.</p>
+		<a href="shapes.html">
+			<button class="m-face4-button">Cards</button>
+		</a>
+	</div>
+
+
+
+
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+		console.log("DOM loaded");
+
+		const btnfst = document.getElementById('btnfst');
+		const btnsnd = document.getElementById('btnsnd');
+		const btnthrd = document.getElementById('btnthrd');
+		const btnfth = document.getElementById('btnfth');
+
+		const faceone = document.getElementById('faceone');
+		const facetwo = document.getElementById('facetwo');
+		const facethree = document.getElementById('facethree');
+		const facefour = document.getElementById('facefour');
+
+		btnfst.addEventListener('click', () => {
+			faceone.style.transform = "translateX(0px) translateY(0px) scale(1.0)";
+			faceone.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+			faceone.style.zIndex = "1";
+
+			facetwo.style.transform = "translateX(-230px) translateY(0px) scale(0.8) rotateY(80deg)";
+			facetwo.style.clipPath = "polygon(0 0, 100% 15%, 100% 85%, 0 100%)";
+			facetwo.style.zIndex = "-1";
+
+			facethree.style.transform = "translateX(0px) translateY(0px) scale(0.5)";
+			facethree.style.zIndex = "-1";
+
+			facefour.style.transform = "translateX(230px) translateY(0px) scale(0.8) rotateY(-80deg)";
+			facefour.style.clipPath = "polygon(0 15%, 100% 0, 100% 100%, 0 85%)";
+			facefour.style.zIndex = "-1";
+		});
+
+		btnsnd.addEventListener('click', () => {
+			faceone.style.transform = "translateX(-230px) translateY(0px) scale(0.8) rotateY(80deg)";
+			faceone.style.clipPath = "polygon(0 0, 100% 15%, 100% 85%, 0 100%)";
+			faceone.style.zIndex = "-1"
+
+			facetwo.style.transform = "translateX(0px) translateY(0px) scale(1.0)";
+			facetwo.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+			facetwo.style.zIndex = "1"
+
+			facethree.style.transform = "translateX(0px) translateY(0px) scale(0.5)";
+			facethree.style.zIndex = "-1";
+
+			facefour.style.transform = "translateX(230px) translateY(0px) scale(0.8) rotateY(-80deg)";
+			facefour.style.clipPath = "polygon(0 15%, 100% 0, 100% 100%, 0 85%)";
+			facefour.style.zIndex = "-1";
+		});
+
+		btnthrd.addEventListener('click', () => {
+			faceone.style.transform = "translateX(0px) translateY(0px) scale(0.5)";
+			faceone.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+			faceone.style.zIndex = "-1";
+
+			facetwo.style.transform = "translateX(-230px) translateY(0px) scale(0.8) rotateY(80deg)";
+			facetwo.style.clipPath = "polygon(0 0, 100% 15%, 100% 85%, 0 100%)";
+			facetwo.style.zIndex = "-1";
+
+			facethree.style.transform = "translateX(0px) translateY(0px) scale(1.0)";
+			facethree.style.zIndex = "1";
+
+			facefour.style.transform = "translateX(230px) translateY(0px) scale(0.8) rotateY(-80deg)";
+			facefour.style.clipPath = "polygon(0 15%, 100% 0, 100% 100%, 0 85%)";
+			facefour.style.zIndex = "-1";
+		});
+
+		btnfth.addEventListener('click', () => {
+			faceone.style.transform = "translateX(230px) translateY(0px) scale(0.8) rotateY(-80deg)";
+			faceone.style.clipPath = "polygon(0 15%, 100% 0, 100% 100%, 0 85%)";
+			faceone.style.zIndex = "-1";
+
+			facetwo.style.transform = "translateX(-230px) translateY(0px) scale(0.8) rotateY(80deg)";
+			facetwo.style.clipPath = "polygon(0 0, 100% 15%, 100% 85%, 0 100%)";
+			facetwo.style.zIndex = "-1";
+
+			facethree.style.transform = "translateX(0px) translateY(0px) scale(0.5)";
+			facethree.style.zIndex = "-1";
+
+			facefour.style.transform = "translateX(0px) translateY(0px) scale(1.0)";
+			facefour.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+			facefour.style.zIndex = "-1";
+		});
+	});
+</script>
+</body>
+</html>

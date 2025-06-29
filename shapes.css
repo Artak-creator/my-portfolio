@@ -1,0 +1,216 @@
+.r1, .r2{
+	width: 100%;
+	height: 450px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: transparent;
+	padding: 20px 0 20px 0;
+	box-sizing: border-box;
+}
+.r1-1, .r1-2{
+	border: none;
+	width: 300px;
+	height: 400px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 2px 3px 3px;
+	box-sizing: border-box;
+}
+.r1-11{
+	border: none;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 7px;
+}
+.r1-11 p{
+	width: 200px;
+}
+.r1-21{
+	border: none;
+	box-sizing: border-box;
+	clip-path: polygon(0 15%, 40% 15%, 40% 0, 100% 0, 100% 100%, 0 100%);
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 7px;
+}
+.r1-21 p{
+	margin: 0;
+}
+.r1-3{
+	border: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 300px;
+	height: 400px;
+	background-color: teal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2.5px 2px 2.5px 2.5px;
+	box-sizing: border-box;
+}
+.r1-31{
+	border: none;
+	width: 100%;
+	height: 100%;
+	clip-path: path("M 0,60   A 10 10 0 0 1 10,50   L110,50   A 10 10 1 0 0 120,40   L120,10   A 10 10 0 0 1 130,0   L300,0   L300,400   L0,400   L0,70  Z");
+	background-color: white;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	transition: all 0.4s;
+}
+.r1-3-p1{
+	cursor: pointer;
+	font-size: 31px;
+	font-family: arial;
+	color: white;
+	z-index: 100;
+	transform: translateX(-90px) translateY(-173px);
+	position: absolute;
+}
+.r1-a1{
+	cursor: pointer;
+	width: 100%;
+	height: 300px;
+	border-bottom: 2px solid teal;
+	background-color: transparent;
+	background-image: url(https://images.unsplash.com/photo-1626379616459-b2ce1d9decbc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.r1-a2{
+	cursor: pointer;
+	font-size: 31px;
+	font-family: arial;
+	color: teal;
+	margin-left: 20px;
+	margin-top: 7px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+#r1-a3{
+	cursor: pointer;
+	font-size: 31px;
+	color: teal;
+	margin-left: 150px;
+	margin-bottom: 0;
+}
+.r1-a4{
+	cursor: pointer;
+	font-size: 17px;
+	font-family: arial;
+	color: rgba(96, 96, 96, 1.0);
+	width: 260px;
+	margin-top: 0;
+	margin-left: 20px;
+	padding-top: 9px;
+	border-top: 1px solid lightgray;
+}
+
+
+
+
+
+
+.r2-1, .r2-2, .r2-3{
+	width: 300px;
+	height: 100%;
+	border: 0px solid;
+	margin: 3px;
+	box-shadow: 0 0 6px lightgray;
+	overflow: hidden;
+
+}
+.r2-3, .r2-2{
+	background: url(https://images.unsplash.com/photo-1532675432006-329c6fed7045?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-position: center bottom;
+	background-size: 110%;
+	background-repeat: no-repeat;
+	transition: all 0.2s;
+}
+.r2-2 p{
+	margin-top:;
+	color: white;
+}
+.r2-31{
+	width: 100%;
+	height: 90px;
+	background: linear-gradient(to bottom, transparent, #fdf5e6);
+	bottom: 0;
+	margin-top: 285px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+.r2-311{
+	font-family: arial;
+	font-size: 31px;
+	width: 150px;
+	color: transparent;
+	margin: 0 0 5px 10px;
+	padding: 0 0 5px 0;
+	border-bottom: 2px solid transparent;
+	transition: all 0.5s;
+}
+.r2-3:hover .r2-311:hover{
+	color: teal;
+}
+.r2-312{
+	font-family: arial;
+	font-size: 19px;
+	color: transparent;
+	margin: 0 0 0 10px;
+	transition: all 0.5s;
+}
+.r2-3:hover .r2-311{
+	font-family: arial;
+	color: rgba(81, 81, 81, 1.0);
+	opacity: 1;
+	width: 150px;
+	border-bottom: 2px solid gray;
+	cursor: pointer;
+}
+.r2-3:hover .r2-312{
+	color: rgba(96, 96, 96, 1.0);
+	opacity: 1;
+}
+.r2-3:hover .r2-31{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.r2-32{
+	font-family: arial;
+	font-size: 24px;
+	margin: 10px 0 0 10px;
+	color: #fffff0;
+	cursor: pointer;
+}
+.r2-3:hover{
+	background-position: center bottom;
+	background-size: 116%;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 10px lightgray;
+}
+@media (max-width: 955px){
+	.r1-1, .r2-1{
+		display: none;
+	}
+}
+@media (max-width: 650px){
+	.r1-2, .r2-2{
+		display: none;
+	}
+}
+@media (max-width: 350px){
+	.r1-3{
+		width: 88vw;
+	}
+	.r2-3{
+		background-size: 100%;
+	}
+}
